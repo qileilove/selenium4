@@ -9,11 +9,11 @@ import java.io.IOException;
 
 public class Selenium4Features {
 
-   //@Test
+   @Test
     public void screenshotTest() throws IOException {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
-        driver.get("http://automationpractice.com/index.php");
+        driver.get("https://www.baidu.com");
         driver.manage().window().maximize();
 
         WebElement logo = driver.findElement(By.xpath("//img[@alt='My Store']"));
